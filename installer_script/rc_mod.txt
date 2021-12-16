@@ -1,0 +1,18 @@
+
+# Ryoki_IoT_GW_app
+# Initiate the ob_iot_gw application
+initApp() {
+    echo "[IoT_GW] Wait for system to bootup"
+    sleep 30
+    if [ -d "/usr/local/bin/ob_iot_gw/app" ]
+    then
+        cd /usr/local/bin/ob_iot_gw/app
+        echo "[IoT_GW] Start IoT application"
+        python3 __init__.py
+    fi
+}
+
+echo "[IoT_GW] Init IoT application"
+initApp &
+
+exit 0

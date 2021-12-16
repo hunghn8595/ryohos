@@ -1,0 +1,129 @@
+[system]
+REBOOT_TRACKFILE
+This variable specifies the path to file containing reboot information.
+
+REBOOT_SHORT_DELAY
+This variable specifies the short period delaying reboot.
+
+REBOOT_LONG_DELAY
+This variable specifies the long period delaying reboot.
+
+KEEPING_OUTPUT_TIME
+This variable specifies the period repeating control request to controlling module to maintain out status.
+
+---------------------------------------------------------------------------------------------------------
+[Cloud configuration]
+CERT_PATH
+This variable will be the path to the folder for all the certificates.
+
+CERTIFICATE_NAME
+This variable will specifies the certificates name in CERT_PATH
+
+ROOTCA_NAME
+This variable will specifies the rootCA name in CERT_PATH
+
+PRIVATE_KEY_NAME
+This variable will specifies the private key name in CERT_PATH
+
+AWS_ENDPOINT
+This variable will specifies the URL to access to AWS.
+
+AWS_TOPIC_PREFIX
+This variable will specifies the common prefix of the AWS topic used for subcribing of publishing.
+
+AWS_DEVICES_SUBSCRIBE_TOPIC_STAGE
+This variable will specifies the stage of device list subcribing topic on AWS.
+
+AWS_CONTROL_SUBSCRIBE_TOPIC_STAGE
+This variable will specifies the stage of controlling demand subcribing topic on AWS.
+
+AWS_TRACKING_SUBSCRIBE_TOPIC_STAGE
+This variable will specifies the stage of tracking data subcribing topic on AWS.
+
+AWS_REQ_DEV_PUBLISH_TOPIC_STAGE
+This variable will specifies the stage of device list requesting message publishing topic on AWS.
+
+AWS_STATUS_PUBLISH_TOPIC_STAGE
+This variable will specifies the stage of status publishing topic on AWS.
+
+STATUS_PUBLISH_PERIOD
+This variable will specifies the period to repeat publishing status of devices.
+
+AWS_DATA_PUBLISH_TOPIC_STAGE
+This variable will specifies the stage of data publishing topic on AWS.
+
+DATA_PUBLISH_PERIOD
+This variable will specifies the period to repeat publishing data of devices.
+
+SLEEP_TIME_OF_RETRYING_CONNECT
+This variable will be the interval of time between the connect commands of cloud module.
+
+SLEEP_TIME_OF_RETRYING_TO_GET_DEVICES
+This variable will be the interval of time between the get devices requests of cloud module.
+
+NUMBER_OF_RETRY_CONNECTIONS
+This variable will be the number of time that applications allow to reconnect.
+
+NUMBER_OF_RETRY_SUBCRIBING
+This variable will be the number of time that applications allow to initiate subcribing on a topic.
+
+NUMBER_OF_RETRY_PUBLISHING
+This variable will be the number of time that applications allow to try publishing to a topic.
+
+SLEEP_TIME_OF_PUBLISH_CLOUD_DATA
+This variable will be the interval of time between data message to publish to cloud.
+
+TRACKING_FILE
+This variable will be the path to the file containing tracking data of the rooms.
+
+REQUIRED_CTL_REQ_NO
+This variable specifies numbers of requests to allow toggle the output channel of controller module.
+
+REQUIRED_MLD_REQ_NO
+This variable specifies numbers of requests to allow toggle the output channel of controller module that is based on mildew.
+
+---------------------------------------------------------------------------------------------------------
+[Database]
+DATABASE_NAME
+This variable specifies database filename including file path for later use (maintainance, trace bugs,...)
+
+---------------------------------------------------------------------------------------------------------
+[Logging]
+LOG_FILE_NAME
+This variable specifies log file name including file path for later use (maintainance, tracebugs,...)
+
+---------------------------------------------------------------------------------------------------------
+[EnOcean]
+ENO_TTYPATH
+This variable specifies the port for EnOcean devices.
+
+ENOCEAN_READING_SLEEP_TIME
+This variable specifies the speed of reading EnOcean data.
+
+CO2_928_TIMEOUT
+This variable specifies the time to determine that CO2-928 device is disconnected.
+
+ENOCEAN_STATUS_TIMEOUT
+This variable specifies the default time to determine that enocean device is disconnected.
+
+ENOCEAN_KEEPING_OUTPUT_TIME
+This variable specifies the period repeating control request to ERT-SWC-RM module to maintain out status.
+
+---------------------------------------------------------------------------------------------------------
+[Modbus]
+MODBUS_TTYPATH
+This variable specifies the Modbus port for Modbus devices.
+
+MODBUS_READING_SLEEP_TIME
+This variable specifies the speed of reading Modbus data.
+
+MODBUS_STATUS_TIMEOUT
+This variable specifies the default time to determine that modbus device is disconnected.
+
+MODBUS_KEEPING_OUTPUT_TIME
+This variable specifies the period repeating control request to WMB-DIO8R module to maintain out status.
+
+---------------------------------------------------------------------------------------------------------
+[ftp]
+FTP_SERVER_FOLDER_PATH
+This variable will be the path to the folder for containing camera images of rooms.
