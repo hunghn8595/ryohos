@@ -1,9 +1,9 @@
 # Network Info
 DEFAULT_NETWORK_IF = "eth0"         # Default interface used for getting MAC address
-MAC_ADDR = "11:22:33:44:55:66"      # Default MAC address
+MAC_ADDR = "08:00:27:8A:00:DF"      # Default MAC address
 
 # AWS Parameters
-AWS_THING_NAME = "GW-112233445566"  # Default AWS Thing name, generated from MAC address
+AWS_THING_NAME = "GW-0800278A00DF"  # Default AWS Thing name, generated from MAC address
 AWS_PORT = 8883             # Port on network used for connecting to AWS cloud services
 
 # EnOcean Configuration

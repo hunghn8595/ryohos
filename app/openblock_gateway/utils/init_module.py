@@ -90,7 +90,7 @@ def get_mac_addr(network_interface, logger):
         logger.info ('[Init] Successfully obtained the default MAC address: ' + str(mac_addr[0:17]))
     except Exception as err:
         # Fail to get MAC due to inputted Interface
-        mac_addr = "AD:A1:23:12:31:23"
+        mac_addr = MAC_ADDR
         logger.error ('[Init] Not able to get MAC address of Gateway, error: ' + str(err))
     return mac_addr[0:17]
 #[END OF FUNCTION][get_mac_addr]########################################################################################
